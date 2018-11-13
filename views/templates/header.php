@@ -174,7 +174,7 @@
         <!-- <li class="header">HEADER</li> -->
         <!-- Optionally, you can add icons to the links -->
         <li class="nav_dashboard"><a href="<?= site_url(); ?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-        <li class="treeview nav_manage-people">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i> <span>Mange People</span>
             <span class="pull-right-container">
@@ -182,16 +182,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="treeview">
-              <a href="#">Manage Students
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="<?= site_url('students'); ?>">Students List</a></li>
-                <li><a href="<?= site_url('students/add_student'); ?>">Add Student</a></li>
-              </ul>
+            <li>
+              <a href="<?= site_url('students'); ?>">Manage Students</a>
             </li>
           </ul>
         </li>
